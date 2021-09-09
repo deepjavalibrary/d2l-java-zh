@@ -1,15 +1,15 @@
-# Recommender Systems
+# 推荐系统
 :label:`chap_recsys`
 
 
 **Shuai Zhang** (*Amazon*), **Aston Zhang** (*Amazon*), and **Yi Tay** (*Google*)
 
-Recommender systems are widely employed in industry and are ubiquitous in our daily lives. These systems are utilized in a number of areas such as online shopping sites (e.g., amazon.com), music/movie services site (e.g., Netflix and Spotify), mobile application stores (e.g., IOS app store and google play), online advertising, just to name a few. 
+推荐系统广泛应用于工业领域，在我们的日常生活中无处不在。这些系统应用于许多领域，如在线购物网站（如亚马逊网站）、音乐/电影服务网站（如Netflix和Spotify）、移动应用商店（如IOS应用商店和google play）、在线广告等。
 
-The major goal of recommender systems is to help users discover relevant items such as movies to watch, text to read or products to buy, so as to create a delightful user experience. Moreover, recommender systems are among the most powerful machine learning systems that online retailers implement in order to drive incremental revenue. Recommender systems are replacements of search engines by reducing the efforts in proactive searches and surprising users with offers they never searched for. Many companies managed to position themselves ahead of their competitors with the help of more effective recommender systems. As such, recommender systems are central to not only our everyday lives but also highly indispensable in some industries.
+推荐系统的主要目标是帮助用户发现相关项目，比如要观看的电影、要阅读的文本或要购买的产品，从而创造愉快的用户体验。此外，推荐系统是在线零售商为了增加收入而实施的最强大的机器学习系统之一。推荐系统是搜索引擎的替代品，它减少了主动搜索的工作量，并使用户从未搜索过的内容让用户惊讶。许多公司借助更有效的推荐系统，设法使自己领先于竞争对手。因此，推荐系统不仅对我们的日常生活至关重要，而且在某些行业中也是不可或缺的。
 
 
-In this chapter, we will cover the fundamentals and advancements of recommender systems, along with exploring some common fundamental techniques for building recommender systems with different data sources available and their implementations. Specifically, you will learn how to predict the rating a user might give to a prospective item, how to generate a recommendation list of items and how to predict the click-through rate from abundant features. These tasks are commonplace in real-world applications. By studying this chapter, you will get hands-on experience pertaining to solving real world recommendation problems with not only classical methods but the more advanced deep learning based models as well.
+在本章中，我们将介绍推荐系统的基本原理和进展，同时探索使用不同数据源构建推荐系统的一些常见基本技术及其实现。具体地说，您将学习如何预测用户对预期项目的评分，如何生成项目的推荐列表，以及如何从丰富的功能中预测点击率。这些任务在实际应用程序中很常见。通过学习本章，您将获得解决现实世界推荐问题的实践经验，不仅使用经典方法，还使用更先进的基于深度学习的模型。
 
 ```toc
 :maxdepth: 2
