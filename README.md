@@ -11,9 +11,9 @@
 ## 如何在Java中运行Jupyter Notebook
 
 ### 线上
-您可以通过以下方式在线运行: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/deepjavalibrary/d2l-java/master?urlpath=lab)
+您可以通过以下方式在线运行: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/deepjavalibrary/d2l-java-zh/master?urlpath=lab)
 
-或者: [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/deepjavalibrary/d2l-java/blob/colab/)
+或者: [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/deepjavalibrary/d2l-java-zh/blob/colab/)
 
 ### 本地
 请按照[此处](https://d2l.djl.ai/chapter_installation/index.html) 的说明操作，以了解如何使用Java运行Notebook。
