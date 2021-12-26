@@ -37,7 +37,7 @@
 * [第八章 循环神经网络](chapter_recurrent-neural-networks/)
 * [第九章 现代循环神经网络](chapter_recurrent-modern/)
 * [第十章 注意力机制](chapter_attention-mechanisms/)
-* [十一章 优化算法](chapter_optimization/)
+* [第十一章 优化算法](chapter_optimization/)
 * [第十二章 计算性能](chapter_computational-performance/)
 * [第十三章 计算机视觉](chapter_computer-vision/)
 
