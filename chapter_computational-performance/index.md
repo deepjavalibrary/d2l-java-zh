@@ -11,6 +11,7 @@
 
 auto-parallelism
 hardware
+multiple-gpus
 multiple-gpus-concise
 parameterserver
 ```

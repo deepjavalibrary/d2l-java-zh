@@ -1,39 +1,42 @@
-# Natural Language Processing: Pretraining
+# 自然语言处理：预训练
 :label:`chap_nlp_pretrain`
 
+人与人之间需要交流。
+出于人类这种基本需要，每天都有大量的书面文本产生。
+比如，社交媒体、聊天应用、电子邮件、产品评论、新闻文章、
+研究论文和书籍中的丰富文本，
+使计算机能够理解它们以提供帮助或基于人类语言做出决策变得至关重要。
 
-Humans need to communicate.
-Out of this basic need of the human condition, a vast amount of written text has been generated on an everyday basis.
-Given rich text in social media, chat apps, emails, product reviews, news articles,  research papers, and books, it becomes vital to enable computers to understand them to offer assistance or make decisions based on human languages.
+*自然语言处理*是指研究使用自然语言的计算机和人类之间的交互。
+在实践中，使用自然语言处理技术来处理和分析文本数据是非常常见的，
+例如 :numref:`sec_language_model`的语言模型
+和 :numref:`sec_machine_translation`的机器翻译模型。
 
-Natural language processing studies interactions between computers and humans using natural languages.
-In practice, it is very common to use natural language processing techniques to process and analyze text (human natural language) data, such as language models in :numref:`sec_language_model` and machine translation models in :numref:`sec_machine_translation`.
+要理解文本，我们可以从学习它的表示开始。
+利用来自大型语料库的现有文本序列，
+*自监督学习*（self-supervised learning）
+已被广泛用于预训练文本表示，
+例如通过使用周围文本的其它部分来预测文本的隐藏部分。
+通过这种方式，模型可以通过有监督地从*海量*文本数据中学习，而不需要*昂贵*的标签标注！
 
-To understand text, we can begin with its representation,
-such as treating each word or subword as an individual text token.
-As we will see in this chapter,
-the representation of each token can be pretrained on a large corpus,
-using word2vec, GloVe, or subword embedding models.
-After pretraining, representation of each token can be a vector,
-however, it remains the same no matter what the context is.
-For instance, the vector representation of "bank" is the same
-in both
-"go to the bank to deposit some money"
-and
-"go to the bank to sit down".
-Thus, many more recent pretraining models adapt representation of the same token
-to different contexts.
-Among them is BERT, a much deeper model based on the Transformer encoder.
-In this chapter, we will focus on how to pretrain such representations for text,
-as highlighted in :numref:`fig_nlp-map-pretrain`.
+本章我们将看到：当将每个单词或子词视为单个词元时，
+可以在大型语料库上使用word2vec、GloVe或子词嵌入模型预先训练每个词元的词元。
+经过预训练后，每个词元的表示可以是一个向量。
+但是，无论上下文是什么，它都保持不变。
+例如，“bank”（可以译作银行或者河岸）的向量表示在
+“go to the bank to deposit some money”（去银行存点钱）
+和“go to the bank to sit down”（去河岸坐下来）中是相同的。
+因此，许多较新的预训练模型使相同词元的表示适应于不同的上下文，
+其中包括基于transformer编码器的更深的自监督模型BERT。
+在本章中，我们将重点讨论如何预训练文本的这种表示，
+如 :numref:`fig_nlp-map-pretrain`中所强调的那样。
 
-![Pretrained text representations can be fed to various deep learning architectures for different downstream natural language processing applications. This chapter focuses on the upstream text representation pretraining.](https://raw.githubusercontent.com/d2l-ai/d2l-en/master/img/nlp-map-pretrain.svg)
+![预训练好的文本表示可以放入各种深度学习架构，应用于不同自然语言处理任务（本章主要研究上游文本的预训练）](https://d2l.ai/_images/nlp-map-pretrain.svg)
 :label:`fig_nlp-map-pretrain`
 
-As shown in :numref:`fig_nlp-map-pretrain`,
-the pretrained text representations can be fed to
-a variety of deep learning architectures for different downstream natural language processing applications.
-We will cover them in :numref:`chap_nlp_app`.
+ :numref:`fig_nlp-map-pretrain`显示了
+预训练好的文本表示可以放入各种深度学习架构，应用于不同自然语言处理任务。
+我们将在 :numref:`chap_nlp_app`中介绍它们。
 
 ```toc
 :maxdepth: 2
